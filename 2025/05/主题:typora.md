@@ -1,0 +1,19 @@
+# 推荐 **typora** 主题
+
+> 尽管是JekyII发布博客,但是考虑到为了写博客的时候内心愉悦,所以还是动力定制Typora的心思.
+
+## 主题获取:
+
+可以点击[这里](https://theme.typoraio.cn/)来选去你满意的主题.我个人比较推荐[Rainbow](https://theme.typoraio.cn/theme/Rainbow/),这个主题看起来很有活力.
+
+## 食用方式:
+
+1.从GitHub对应仓库的Release下载 **SourceCode**.
+
+2.从Typora**设置>外观>主题**里进入主题文件目录,然后复制粘贴到该目录下.
+
+> [!NOTE]
+>
+> 可以参考我的主题目录,直接进入:*/Users/greenhandzdl/Library/Application Support/abnerworks.Typora/themes*
+
+3.主题选项下启用.
