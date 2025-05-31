@@ -5,7 +5,14 @@ author: [greenhandzdl]
 show_downloads: true
 google_analytics:
 remote_theme: pages-themes/leap-day@v0.2.0
+theme: jekyll-theme-leap-day
 plugins:
   - jekyll-remote-theme
   - jekyll-sitemap
   - jekyll-feed
+exclude:
+  - "*.png"
+  - "*.jpg"
+  - "*.jpeg"
+  - "*.gif"
+  - permalink: /:year/:month/:day/:title/
