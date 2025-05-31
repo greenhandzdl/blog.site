@@ -1,6 +1,7 @@
 ---
 layout: post
 title:  "读书笔记:Confident Cyber Security"
+date: 2025-05-31
 permalink: /读书笔记:Confident Cyber Security.html
 ---
 

@@ -15,4 +15,4 @@ exclude:
   - "*.jpg"
   - "*.jpeg"
   - "*.gif"
-  - permalink: /:year/:month/:day/:title/
+permalink: /:year/:month/:day/:title/
