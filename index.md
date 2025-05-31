@@ -10,3 +10,9 @@
 >
 > 目前:这个博客仅仅会发布一些经验,如果你是别有用心的社会工程学专家,可能会让你失望.
 
+## 订阅:
+
+订阅这个博客,请使用[RSS订阅](https://j.greenhandzdl.moe/feed.xml)
+
+## 联系:
+可以在[Issue](https://github.com/greenhandzdl/blog.site/issues)里提出issue来留言,注意留言格式最好精准到某篇文章.
