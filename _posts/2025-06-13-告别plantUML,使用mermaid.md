@@ -7,6 +7,10 @@ permalink: /告别plantUML,使用mermaid.html
 
 # 拥抱Mermaid
 
+## Overview
+
+[TOC]
+
 ## 缘起
 
 之前有段时间,很痴迷于UML并且一直尝试用着**PlentUML**.但是,实际上**PlentUML**的编译器一点都不友好!!!所以,在大致的写下后,大部分时间都在尝试让编译器能够输出我想要的图像.
