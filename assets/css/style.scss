@@ -1,0 +1,171 @@
+---
+# Main Stylesheet Entry Point
+---
+// Import Sass partials
+@import "variables";
+@import "base";
+@import "layout";
+@import "components";
+
+// Header decorative line
+.site-header {
+  position: relative;
+
+  &::after {
+    content: "✿ ❀ ✿ ❀ ✿ ❀ ✿ ❀ ✿ ❀ ✿ ❀ ✿ ❀ ✿ ❀ ✿ ❀ ✿ ❀ ✿ ❀ ✿ ❀ ✿ ❀ ✿ ❀ ✿ ❀";
+    position: absolute;
+    bottom: -12px;
+    left: 0;
+    right: 0;
+    text-align: center;
+    color: var(--border);
+    font-size: 8px;
+    letter-spacing: 4px;
+    overflow: hidden;
+    white-space: nowrap;
+  }
+}
+
+// Link styles
+.post-content {
+  a:not(.btn) {
+    color: var(--accent);
+    border-bottom: 1px dashed var(--primary);
+
+    &:hover {
+      background: linear-gradient(135deg, var(--primary), var(--accent));
+      color: white;
+      border-bottom-color: transparent;
+    }
+  }
+
+  // Syntax highlighting - enhanced for brightness
+  .highlight {
+    margin: 1.5em 0;
+    border-radius: $border-radius;
+    overflow: hidden;
+    border: 2px solid var(--secondary);
+
+    pre {
+      margin: 0;
+      border: none;
+    }
+
+    .c { color: #8B7D8B; font-style: italic; }
+    .err { color: #FF6B9D; }
+    .k { color: var(--primary); font-weight: 600; }
+    .o { color: var(--accent); }
+    .cm { color: #8B7D8B; font-style: italic; }
+    .cp { color: var(--accent); }
+    .c1 { color: #8B7D8B; font-style: italic; }
+    .cs { color: #8B7D8B; font-style: italic; }
+    .gd { color: #FF6B9D; }
+    .ge { font-style: italic; }
+    .gh { color: var(--text); font-weight: 600; }
+    .gi { color: var(--primary); }
+    .gp { color: var(--text-secondary); }
+    .gs { font-weight: 600; }
+    .gu { color: var(--accent); }
+    .kc { color: var(--primary); font-weight: 600; }
+    .kd { color: var(--primary); font-weight: 600; }
+    .kn { color: var(--primary); font-weight: 600; }
+    .kp { color: var(--primary); }
+    .kr { color: var(--primary); font-weight: 600; }
+    .kt { color: var(--accent); }
+    .m { color: #B4A7D6; }
+    .s { color: var(--accent); }
+    .na { color: var(--primary); }
+    .nb { color: var(--accent); }
+    .nc { color: var(--primary); font-weight: 600; }
+    .no { color: #B4A7D6; }
+    .nd { color: var(--accent); }
+    .ni { color: var(--text); }
+    .ne { color: #FFB7D5; }
+    .nf { color: var(--primary); }
+    .nl { color: var(--text); }
+    .nn { color: var(--accent); }
+    .nt { color: var(--primary); }
+    .nv { color: #B4A7D6; }
+    .ow { color: var(--accent); }
+    .w { color: var(--text-secondary); }
+    .mf { color: #B4A7D6; }
+    .mh { color: #B4A7D6; }
+    .mi { color: #B4A7D6; }
+    .mo { color: #B4A7D6; }
+    .sb { color: var(--accent); }
+    .sc { color: var(--accent); }
+    .sd { color: var(--text-secondary); }
+    .s2 { color: var(--accent); }
+    .se { color: var(--accent); }
+    .sh { color: var(--accent); }
+    .si { color: var(--accent); }
+    .sx { color: var(--accent); }
+    .sr { color: var(--primary); }
+    .s1 { color: var(--accent); }
+    .ss { color: #B4A7D6; }
+    .bp { color: var(--text); }
+    .vc { color: #B4A7D6; }
+    .vg { color: #B4A7D6; }
+    .vi { color: #B4A7D6; }
+    .il { color: #B4A7D6; }
+
+    .lineno {
+      color: var(--text-secondary);
+      margin-right: 1em;
+      border-right: 1px solid var(--secondary);
+      padding-right: 0.5em;
+    }
+  }
+}
+
+// Table styles
+.post-content table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 1.5em 0;
+  border-radius: $border-radius-small;
+  overflow: hidden;
+
+  th, td {
+    border: 1px solid var(--secondary);
+    padding: 0.75em;
+    text-align: left;
+  }
+
+  th {
+    background: var(--secondary);
+    font-weight: 600;
+    color: var(--text);
+  }
+
+  tr:hover {
+    background: var(--secondary);
+  }
+}
+
+// Mobile
+@media (max-width: $breakpoint-tablet) {
+  .site-nav {
+    font-size: $font-size-small;
+    gap: 0.75rem;
+  }
+
+  .theme-toggle {
+    width: 38px;
+    height: 38px;
+  }
+}
+
+// Print
+@media print {
+  .site-header,
+  .site-footer,
+  .theme-toggle {
+    display: none !important;
+  }
+
+  body {
+    background: white;
+    color: black;
+  }
+}
