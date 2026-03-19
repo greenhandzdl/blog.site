@@ -2,14 +2,16 @@
 layout: post
 title:  "告别plantUML,使用mermaid"
 date: 2025-06-13
-permalink: /告别plantUML,使用mermaid.html
+
 ---
+toc: true
 
 # 拥抱Mermaid
 
 ## Overview
 
-[TOC]
+* 目录会自动生成
+{:toc}
 
 ## 缘起
 
