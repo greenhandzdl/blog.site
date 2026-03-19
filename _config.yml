@@ -1,18 +1,44 @@
+# MoeBlog Theme Configuration
+
 url: "https://j.greenhandzdl.moe"
-title: [greenhandzdl's  blog]
-description: [新的开始,2025年之后发布的文章.由JekyII和GitHub Pages驱动.]
-author: [greenhandzdl]
-show_downloads: true
+title: "greenhandzdl's blog"
+description: "新的开始,2025年之后发布的文章.由Jekyll和GitHub Pages驱动."
+author: "greenhandzdl"
+show_downloads: false
 google_analytics:
-remote_theme: pages-themes/leap-day@v0.2.0
-theme: jekyll-theme-leap-day
+
+# Theme settings
+timezone: Asia/Shanghai
+permalink: /:year/:month/:day/:title/
+
+# Build settings
+markdown: kramdown
 plugins:
-  - jekyll-remote-theme
   - jekyll-sitemap
   - jekyll-feed
+  - jekyll-paginate
+
+# Kramdown settings for TOC and code highlighting
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
+  syntax_highlighter_opts:
+    css: class
+  auto_ids: true
+  toc_levels: 1..6
+  entity_output: as_char
+
+# Pagination (disabled for archive)
+# paginate: 5
+# paginate_path: /archive/page:num/
+
+# Include assets (images)
 exclude:
-  - "*.png"
-  - "*.jpg"
-  - "*.jpeg"
-  - "*.gif"
-permalink: /:year/:month/:day/:title/
+  - "*.docx"
+  - "Gemfile"
+  - "Gemfile.lock"
+  - "node_modules"
+  - "vendor"
+
+# Social links (optional)
+github: greenhandzdl

@@ -262,6 +262,7 @@ DEPENDENCIES
   faraday-retry
   github-pages
   jekyll-feed
+  jekyll-paginate
   jekyll-remote-theme
   jekyll-sitemap
 
