@@ -1,0 +1,42 @@
+---
+layout: default
+---
+
+<div class="home-welcome">
+  <h1>欢迎来到我的博客 ✿</h1>
+  <p>这里记录了我的学习笔记、技术探索和生活随想。<br>希望能给你带来一些启发和帮助~</p>
+  <p style="font-size: 0.9em; color: var(--primary);">
+    ❀ ❀ ❀ ❀ ❀ ❀ ❀ ❀ ❀ ❀ ❀ ❀ ❀ ❀
+  </p>
+</div>
+
+<div class="posts-list">
+  {% for post in site.posts limit:3 %}
+  <article class="post-item">
+    <h2 class="post-title">
+      <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
+    </h2>
+    <div class="post-meta">
+      <span class="post-date">
+        <span>📅</span> {{ post.date | date: "%Y年%m月%d日" }}
+      </span>
+    </div>
+    <p class="post-excerpt">
+      {% if post.description %}
+        {{ post.description }}
+      {% elsif post.excerpt %}
+        {{ post.excerpt | strip_html | truncate: 150 }}
+      {% else %}
+        {{ post.content | strip_html | truncate: 150 }}
+      {% endif %}
+    </p>
+    <a href="{{ post.url | relative_url }}" class="btn">阅读全文 →</a>
+  </article>
+  {% endfor %}
+</div>
+
+<div class="home-archive-link">
+  <a href="{{ '/archive/' | relative_url }}" class="btn btn-primary">
+    📚 查看全部文章 (共 {{ site.posts.size }} 篇)
+  </a>
+</div>
