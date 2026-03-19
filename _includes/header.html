@@ -1,0 +1,16 @@
+<header class="site-header">
+  <div class="container header-inner">
+    <a href="{{ '/' | relative_url }}" class="site-title">
+      ✿ {{ site.title }} ✿
+    </a>
+    <nav class="site-nav">
+      <a href="{{ '/' | relative_url }}">首页</a>
+      <a href="{{ '/archive' | relative_url }}">归档</a>
+      <a href="{{ '/about' | relative_url }}">关于</a>
+      {% if site.github %}
+      <a href="https://github.com/{{ site.github }}" target="_blank" rel="noopener">GitHub</a>
+      {% endif %}
+      {% include theme-toggle.html %}
+    </nav>
+  </div>
+</header>
