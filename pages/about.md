@@ -17,7 +17,7 @@ permalink: /about/
 
 ## 订阅
 
-订阅这个博客,请使用[RSS订阅](https://j.greenhandzdl.moe/feed.xml)
+订阅这个博客,请使用[RSS订阅](/feed.xml)
 
 ## 联系
 
